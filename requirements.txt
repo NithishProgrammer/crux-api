@@ -3,7 +3,7 @@ uvicorn
 sqlalchemy 
 google-genai
 psycopg2-binary
-psycopg2[binary]
+psycopg[binary]
 pydantic
 psycopg2
 passlib[bcrypt]
