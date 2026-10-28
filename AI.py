@@ -3,7 +3,7 @@ from google import genai
 
 def analyze_problem_and_solution(problem_statement , solution):
     # 1. Your VIP pass to talk to Google's servers
-    api_key ="AQ.Ab8RN6I--qpAsvQPGUPrg9SGJnpAF6QFt8PIcH4-scLzXhnYkw"
+    api_key =os.getenv("GEMINI_API")
     client = genai.Client(api_key=api_key)
 
     print("=== Problem & Solution Analyzer ===")
